@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+               BuildableName = "SKTRingNodeDemo WatchKit App.app"
+               BlueprintName = "SKTRingNodeDemo WatchKit App"
+               ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "763617D81D9B1E4D009C3913"
                BuildableName = "SKTRingNodeDemo.app"
                BlueprintName = "SKTRingNodeDemo"
@@ -32,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "763617D81D9B1E4D009C3913"
-            BuildableName = "SKTRingNodeDemo.app"
-            BlueprintName = "SKTRingNodeDemo"
+            BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+            BuildableName = "SKTRingNodeDemo WatchKit App.app"
+            BlueprintName = "SKTRingNodeDemo WatchKit App"
             ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,16 +65,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/SKTRingNodeDemo">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "763617D81D9B1E4D009C3913"
-            BuildableName = "SKTRingNodeDemo.app"
-            BlueprintName = "SKTRingNodeDemo"
+            BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+            BuildableName = "SKTRingNodeDemo WatchKit App.app"
+            BlueprintName = "SKTRingNodeDemo WatchKit App"
             ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+            BuildableName = "SKTRingNodeDemo WatchKit App.app"
+            BlueprintName = "SKTRingNodeDemo WatchKit App"
+            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +95,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/SKTRingNodeDemo">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "763617D81D9B1E4D009C3913"
-            BuildableName = "SKTRingNodeDemo.app"
-            BlueprintName = "SKTRingNodeDemo"
+            BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+            BuildableName = "SKTRingNodeDemo WatchKit App.app"
+            BlueprintName = "SKTRingNodeDemo WatchKit App"
             ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
+            BuildableName = "SKTRingNodeDemo WatchKit App.app"
+            BlueprintName = "SKTRingNodeDemo WatchKit App"
+            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

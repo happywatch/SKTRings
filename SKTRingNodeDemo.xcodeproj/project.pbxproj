@@ -15,7 +15,71 @@
 		763617E81D9B1E4D009C3913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763617E61D9B1E4D009C3913 /* Main.storyboard */; };
 		763617EA1D9B1E4D009C3913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763617E91D9B1E4D009C3913 /* Assets.xcassets */; };
 		763617ED1D9B1E4D009C3913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763617EB1D9B1E4D009C3913 /* LaunchScreen.storyboard */; };
+		7636180F1D9B1EF8009C3913 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617F81D9B1EF8009C3913 /* CGFloat+Extensions.swift */; };
+		763618101D9B1EF8009C3913 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617F91D9B1EF8009C3913 /* CGPoint+Extensions.swift */; };
+		763618111D9B1EF8009C3913 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FA1D9B1EF8009C3913 /* CGVector+Extensions.swift */; };
+		763618121D9B1EF8009C3913 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FB1D9B1EF8009C3913 /* Int+Extensions.swift */; };
+		763618131D9B1EF8009C3913 /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FC1D9B1EF8009C3913 /* SKAction+Extensions.swift */; };
+		763618141D9B1EF8009C3913 /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FD1D9B1EF8009C3913 /* SKAction+SpecialEffects.swift */; };
+		763618151D9B1EF8009C3913 /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FE1D9B1EF8009C3913 /* SKColor+Extensions.swift */; };
+		763618161D9B1EF8009C3913 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763617FF1D9B1EF8009C3913 /* SKNode+Extensions.swift */; };
+		763618171D9B1EF8009C3913 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618001D9B1EF8009C3913 /* SKTAudio.swift */; };
+		763618181D9B1EF8009C3913 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618011D9B1EF8009C3913 /* SKTEffects.swift */; };
+		763618191D9B1EF8009C3913 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618021D9B1EF8009C3913 /* SKTTimingFunctions.swift */; };
+		7636181A1D9B1EF8009C3913 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618031D9B1EF8009C3913 /* Vector3.swift */; };
+		7636181B1D9B1EF8009C3913 /* SKRingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618051D9B1EF8009C3913 /* SKRingNode.swift */; };
+		7636181C1D9B1EF8009C3913 /* SKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618061D9B1EF8009C3913 /* SKColor.swift */; };
+		7636181D1D9B1EF8009C3913 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618071D9B1EF8009C3913 /* CGFloat.swift */; };
+		763618241D9B1FAF009C3913 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763618221D9B1FAF009C3913 /* Interface.storyboard */; };
+		763618261D9B1FAF009C3913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763618251D9B1FAF009C3913 /* Assets.xcassets */; };
+		7636182D1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7636182C1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		763618321D9B1FAF009C3913 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618311D9B1FAF009C3913 /* InterfaceController.swift */; };
+		763618341D9B1FAF009C3913 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */; };
+		763618361D9B1FAF009C3913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763618351D9B1FAF009C3913 /* Assets.xcassets */; };
+		7636183A1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 763618201D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7636182E1D9B1FAF009C3913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 763617D11D9B1E4D009C3913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7636182B1D9B1FAF009C3913;
+			remoteInfo = "SKTRingNodeDemo WatchKit App Extension";
+		};
+		763618381D9B1FAF009C3913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 763617D11D9B1E4D009C3913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7636181F1D9B1FAF009C3913;
+			remoteInfo = "SKTRingNodeDemo WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7636183E1D9B1FAF009C3913 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7636182D1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763618421D9B1FAF009C3913 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7636183A1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		763617D91D9B1E4D009C3913 /* SKTRingNodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKTRingNodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +92,41 @@
 		763617E91D9B1E4D009C3913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		763617EC1D9B1E4D009C3913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		763617EE1D9B1E4D009C3913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763617F81D9B1EF8009C3913 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		763617F91D9B1EF8009C3913 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		763617FA1D9B1EF8009C3913 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		763617FB1D9B1EF8009C3913 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		763617FC1D9B1EF8009C3913 /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		763617FD1D9B1EF8009C3913 /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		763617FE1D9B1EF8009C3913 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		763617FF1D9B1EF8009C3913 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		763618001D9B1EF8009C3913 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		763618011D9B1EF8009C3913 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		763618021D9B1EF8009C3913 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		763618031D9B1EF8009C3913 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		763618051D9B1EF8009C3913 /* SKRingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRingNode.swift; sourceTree = "<group>"; };
+		763618061D9B1EF8009C3913 /* SKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKColor.swift; sourceTree = "<group>"; };
+		763618071D9B1EF8009C3913 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		763618201D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SKTRingNodeDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		763618231D9B1FAF009C3913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		763618251D9B1FAF009C3913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		763618271D9B1FAF009C3913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7636182C1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SKTRingNodeDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		763618311D9B1FAF009C3913 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		763618351D9B1FAF009C3913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		763618371D9B1FAF009C3913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		763617D61D9B1E4D009C3913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763618291D9B1FAF009C3913 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				763617DB1D9B1E4D009C3913 /* SKTRingNodeDemo */,
+				7636180A1D9B1EF8009C3913 /* Shared */,
+				763618211D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */,
+				763618301D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension */,
 				763617DA1D9B1E4D009C3913 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				763617D91D9B1E4D009C3913 /* SKTRingNodeDemo.app */,
+				763618201D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app */,
+				7636182C1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +173,68 @@
 			path = SKTRingNodeDemo;
 			sourceTree = "<group>";
 		};
+		763618041D9B1EF8009C3913 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				763617F81D9B1EF8009C3913 /* CGFloat+Extensions.swift */,
+				763617F91D9B1EF8009C3913 /* CGPoint+Extensions.swift */,
+				763617FA1D9B1EF8009C3913 /* CGVector+Extensions.swift */,
+				763617FB1D9B1EF8009C3913 /* Int+Extensions.swift */,
+				763617FC1D9B1EF8009C3913 /* SKAction+Extensions.swift */,
+				763617FD1D9B1EF8009C3913 /* SKAction+SpecialEffects.swift */,
+				763617FE1D9B1EF8009C3913 /* SKColor+Extensions.swift */,
+				763617FF1D9B1EF8009C3913 /* SKNode+Extensions.swift */,
+				763618001D9B1EF8009C3913 /* SKTAudio.swift */,
+				763618011D9B1EF8009C3913 /* SKTEffects.swift */,
+				763618021D9B1EF8009C3913 /* SKTTimingFunctions.swift */,
+				763618031D9B1EF8009C3913 /* Vector3.swift */,
+			);
+			name = SKTUtils;
+			sourceTree = "<group>";
+		};
+		763618081D9B1EF8009C3913 /* SKTRing */ = {
+			isa = PBXGroup;
+			children = (
+				763618051D9B1EF8009C3913 /* SKRingNode.swift */,
+				763618061D9B1EF8009C3913 /* SKColor.swift */,
+				763618071D9B1EF8009C3913 /* CGFloat.swift */,
+				763618041D9B1EF8009C3913 /* SKTUtils */,
+			);
+			name = SKTRing;
+			path = Escape;
+			sourceTree = "<group>";
+		};
+		7636180A1D9B1EF8009C3913 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				763618081D9B1EF8009C3913 /* SKTRing */,
+			);
+			name = Shared;
+			path = "../w2T/18-interactive-animations-with-spritekit-and-scenekit/projects/final/Escape";
+			sourceTree = "<group>";
+		};
+		763618211D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				763618221D9B1FAF009C3913 /* Interface.storyboard */,
+				763618251D9B1FAF009C3913 /* Assets.xcassets */,
+				763618271D9B1FAF009C3913 /* Info.plist */,
+			);
+			path = "SKTRingNodeDemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		763618301D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				763618311D9B1FAF009C3913 /* InterfaceController.swift */,
+				763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */,
+				763618351D9B1FAF009C3913 /* Assets.xcassets */,
+				763618371D9B1FAF009C3913 /* Info.plist */,
+			);
+			name = "SKTRingNodeDemo WatchKit Extension";
+			path = "SKTRingNodeDemo WatchKit App Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +245,51 @@
 				763617D51D9B1E4D009C3913 /* Sources */,
 				763617D61D9B1E4D009C3913 /* Frameworks */,
 				763617D71D9B1E4D009C3913 /* Resources */,
+				763618421D9B1FAF009C3913 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				763618391D9B1FAF009C3913 /* PBXTargetDependency */,
 			);
 			name = SKTRingNodeDemo;
 			productName = SKTRingNodeDemo;
 			productReference = 763617D91D9B1E4D009C3913 /* SKTRingNodeDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7636181F1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7636183F1D9B1FAF009C3913 /* Build configuration list for PBXNativeTarget "SKTRingNodeDemo WatchKit App" */;
+			buildPhases = (
+				7636181E1D9B1FAF009C3913 /* Resources */,
+				7636183E1D9B1FAF009C3913 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7636182F1D9B1FAF009C3913 /* PBXTargetDependency */,
+			);
+			name = "SKTRingNodeDemo WatchKit App";
+			productName = "SKTRingNodeDemo WatchKit App";
+			productReference = 763618201D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7636182B1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7636183B1D9B1FAF009C3913 /* Build configuration list for PBXNativeTarget "SKTRingNodeDemo WatchKit Extension" */;
+			buildPhases = (
+				763618281D9B1FAF009C3913 /* Sources */,
+				763618291D9B1FAF009C3913 /* Frameworks */,
+				7636182A1D9B1FAF009C3913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SKTRingNodeDemo WatchKit Extension";
+			productName = "SKTRingNodeDemo WatchKit App Extension";
+			productReference = 7636182C1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +302,14 @@
 				ORGANIZATIONNAME = benmorrow;
 				TargetAttributes = {
 					763617D81D9B1E4D009C3913 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					7636181F1D9B1FAF009C3913 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					7636182B1D9B1FAF009C3913 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -123,6 +329,8 @@
 			projectRoot = "";
 			targets = (
 				763617D81D9B1E4D009C3913 /* SKTRingNodeDemo */,
+				7636181F1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */,
+				7636182B1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +348,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7636181E1D9B1FAF009C3913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763618261D9B1FAF009C3913 /* Assets.xcassets in Resources */,
+				763618241D9B1FAF009C3913 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7636182A1D9B1FAF009C3913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763618361D9B1FAF009C3913 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,12 +373,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				763617E31D9B1E4D009C3913 /* GameScene.swift in Sources */,
+				763618191D9B1EF8009C3913 /* SKTTimingFunctions.swift in Sources */,
+				763618111D9B1EF8009C3913 /* CGVector+Extensions.swift in Sources */,
+				763618101D9B1EF8009C3913 /* CGPoint+Extensions.swift in Sources */,
+				7636180F1D9B1EF8009C3913 /* CGFloat+Extensions.swift in Sources */,
+				763618171D9B1EF8009C3913 /* SKTAudio.swift in Sources */,
 				763617E51D9B1E4D009C3913 /* GameViewController.swift in Sources */,
+				7636181D1D9B1EF8009C3913 /* CGFloat.swift in Sources */,
+				763618161D9B1EF8009C3913 /* SKNode+Extensions.swift in Sources */,
+				763618131D9B1EF8009C3913 /* SKAction+Extensions.swift in Sources */,
+				7636181B1D9B1EF8009C3913 /* SKRingNode.swift in Sources */,
+				763618141D9B1EF8009C3913 /* SKAction+SpecialEffects.swift in Sources */,
 				763617DD1D9B1E4D009C3913 /* AppDelegate.swift in Sources */,
+				763618181D9B1EF8009C3913 /* SKTEffects.swift in Sources */,
+				763618121D9B1EF8009C3913 /* Int+Extensions.swift in Sources */,
+				7636181C1D9B1EF8009C3913 /* SKColor.swift in Sources */,
+				7636181A1D9B1EF8009C3913 /* Vector3.swift in Sources */,
+				763618151D9B1EF8009C3913 /* SKColor+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763618281D9B1FAF009C3913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763618341D9B1FAF009C3913 /* ExtensionDelegate.swift in Sources */,
+				763618321D9B1FAF009C3913 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7636182F1D9B1FAF009C3913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7636182B1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit Extension */;
+			targetProxy = 7636182E1D9B1FAF009C3913 /* PBXContainerItemProxy */;
+		};
+		763618391D9B1FAF009C3913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7636181F1D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */;
+			targetProxy = 763618381D9B1FAF009C3913 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		763617E61D9B1E4D009C3913 /* Main.storyboard */ = {
@@ -170,6 +432,14 @@
 				763617EC1D9B1E4D009C3913 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		763618221D9B1FAF009C3913 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				763618231D9B1FAF009C3913 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +562,72 @@
 			};
 			name = Release;
 		};
+		7636183C1D9B1FAF009C3913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SKTRingNodeDemo WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmorrow.SKTRingNodeDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		7636183D1D9B1FAF009C3913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SKTRingNodeDemo WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmorrow.SKTRingNodeDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		763618401D9B1FAF009C3913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SKTRingNodeDemo_WatchKit_App_Extension;
+				INFOPLIST_FILE = "SKTRingNodeDemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmorrow.SKTRingNodeDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		763618411D9B1FAF009C3913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SKTRingNodeDemo_WatchKit_App_Extension;
+				INFOPLIST_FILE = "SKTRingNodeDemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmorrow.SKTRingNodeDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,6 +645,22 @@
 			buildConfigurations = (
 				763617F21D9B1E4D009C3913 /* Debug */,
 				763617F31D9B1E4D009C3913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7636183B1D9B1FAF009C3913 /* Build configuration list for PBXNativeTarget "SKTRingNodeDemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7636183C1D9B1FAF009C3913 /* Debug */,
+				7636183D1D9B1FAF009C3913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7636183F1D9B1FAF009C3913 /* Build configuration list for PBXNativeTarget "SKTRingNodeDemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763618401D9B1FAF009C3913 /* Debug */,
+				763618411D9B1FAF009C3913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
