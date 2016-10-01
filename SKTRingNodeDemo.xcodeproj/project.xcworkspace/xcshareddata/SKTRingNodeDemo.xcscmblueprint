@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F7A76D0B4208A9450A51808FAF22B06A088A82B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F7A76D0B4208A9450A51808FAF22B06A088A82B1" : 9223372036854775807,
+    "CBF2F099A3E764BBF57A7A59B0F21D00647812BA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F127EC3C-3D41-4D0D-A3E8-9F5E7A0E3704",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F7A76D0B4208A9450A51808FAF22B06A088A82B1" : "SKTRingNodeDemo\/",
+    "CBF2F099A3E764BBF57A7A59B0F21D00647812BA" : "w2T\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SKTRingNodeDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SKTRingNodeDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/raywenderlich\/w2T.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CBF2F099A3E764BBF57A7A59B0F21D00647812BA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/happywatch\/SKTRingNode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F7A76D0B4208A9450A51808FAF22B06A088A82B1"
+    }
+  ]
+}
