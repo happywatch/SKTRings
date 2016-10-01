@@ -153,6 +153,7 @@
 		763617D01D9B1E4D009C3913 = {
 			isa = PBXGroup;
 			children = (
+				769291691DA0806300C0A8A2 /* Shared */,
 				763617DB1D9B1E4D009C3913 /* SKTRingNodeDemo */,
 				7636180A1D9B1EF8009C3913 /* Shared */,
 				763618211D9B1FAF009C3913 /* SKTRingNodeDemo WatchKit App */,
@@ -217,6 +218,14 @@
 			name = "SKTRingNodeDemo WatchKit Extension";
 			path = "SKTRingNodeDemo WatchKit App Extension";
 			sourceTree = "<group>";
+		};
+		769291691DA0806300C0A8A2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Shared;
+			path = SKTRingNodeDemo;
+			sourceTree = SOURCE_ROOT;
 		};
 		76D19A931D9F039700A69030 /* SKTRing */ = {
 			isa = PBXGroup;
