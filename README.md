@@ -108,11 +108,11 @@ let colorUpAction = SKAction.actionWithEffect(colorUpEffect)
 let colorDownEffect = SKTRingColorEffect(for: ring, to: red, duration: duration)
 colorDownEffect.timingFunction = SKTTimingFunctionBounceEaseOut
 let colorDownAction = SKAction.actionWithEffect(colorDownEffect)
-let sequence6 = SKAction.sequence([colorUpAction,
+let sequence = SKAction.sequence([colorUpAction,
                                    SKAction.wait(forDuration: duration / 3),
                                    colorDownAction,
                                    SKAction.wait(forDuration: duration / 3)])
-ring.run(SKAction.repeatForever(sequence6))
+ring.run(SKAction.repeatForever(sequence))
 ```
 
 ### Animating with value easing and color easing
