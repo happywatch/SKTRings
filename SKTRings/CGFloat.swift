@@ -1,5 +1,7 @@
 /**
- * Copyright (c) 2016 Razeware LLC
+ * Copyright (c) 2016 Ben Morrow
+ *
+ * MIT License
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
