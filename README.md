@@ -3,17 +3,15 @@ Animated ring charts made with SpriteKit for watchOS 3. Supports bounce easing a
 
 ![iOS, watchOS animated rings with SpriteKit](https://media.giphy.com/media/32oaBkqWFqfAc/giphy.gif)
 
-_Click the image to preview the animation._
-
 The Activity app is one of the prominent features of the Apple Watch. Imagine if the Activity app’s rings could animate to their current value with a bounce effect or change color depending on how recently you moved. Those animations would be both magical and useful. However, you’d have a hard time implementing them with a sequence of images like you used in watchOS 2. Instead, now you can use SpriteKit to achieve those animations.
 
 ## API
 
-`SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You control the `thickness` and the `color` of a ring. 
+`SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You can control the `thickness` and the `color` of a ring. 
 
-`SKNestedRingNode` simplifies creating multiple concentric rings. You control the `spacing` between rings. 
+`SKNestedRingNode` simplifies creating multiple concentric rings. You can control the `spacing` between rings. 
 
-Use `SKTRingColorEffect` to animate the color of the ring with optional easing. Similarly, use `SKTRingValueEffect` to animate the the filled-in value with optional easing.
+`SKTRingValueEffect` animates the value of the ring with optional easing. Similarly, `SKTRingColorEffect` animates the color with optional easing.
 
 > **Note**: This API relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.
 >
