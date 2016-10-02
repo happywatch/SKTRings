@@ -5,6 +5,8 @@ The Activity app is one of the prominent features of the Apple Watch. Imagine if
 
 `SKRingNode` performs the bulk of the calculations and drawing of the ring so that you can focus on the animations you’ll add to it. `SKNestedRingNode` simplifies creating multiple concentric rings.
 
-SKTRings relies on SKTUtils, an open source project published by the raywenderlich.com team. You can check it out on GitHub at [bit.ly/2dcyDyz](http://bit.ly/2dcyDyz).
+The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS and watchOS.
 
-There’s only one file inside SKTUtils that’s not shared with the WatchKit Extension, SKTAudio.swift. Its code refers to `AVFoundation` which is not available in watchOS.
+SKTRings relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team. You can check it out on GitHub.
+
+> **Note**: There’s only one file inside SKTUtils that’s not shared with the WatchKit Extension in the Demo app. SKTAudio.swift refers to `AVFoundation` which is not available in watchOS.
