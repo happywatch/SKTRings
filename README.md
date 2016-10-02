@@ -7,6 +7,6 @@ The Activity app is one of the prominent features of the Apple Watch. Imagine if
 
 The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS and watchOS.
 
-SKTRings relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team. You can check it out on GitHub.
-
-> **Note**: There’s only one file inside SKTUtils that’s not shared with the WatchKit Extension in the Demo app. SKTAudio.swift refers to `AVFoundation` which is not available in watchOS.
+> **Note**: SKTRings relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team. You can check it out on GitHub.
+>
+>There’s only one file inside SKTUtils that’s not shared with the WatchKit Extension in the Demo app. SKTAudio.swift refers to `AVFoundation` which is not available in watchOS.
