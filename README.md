@@ -9,7 +9,7 @@ The Activity app is one of the prominent features of the Apple Watch. Imagine if
 
 This library was originally written for Chapter 18, "Interactive Animation," in the book, [watchOS by Tutorials](http://bit.ly/w3Tbook).
 
-## API
+## API Overview
 
 `SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You can control the `thickness` and the `color` of a ring. 
 
