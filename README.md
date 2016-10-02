@@ -1,4 +1,4 @@
-# SKTRings
+# SpriteKit Rings
 Animated ring charts made with SpriteKit for watchOS 3. Supports bounce easing and color change effects.
 
 ![iOS, watchOS animated rings with SpriteKit](https://media.giphy.com/media/32oaBkqWFqfAc/giphy.gif)
