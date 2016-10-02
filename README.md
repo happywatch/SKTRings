@@ -93,7 +93,6 @@ ring.run(SKAction.repeatForever(sequence))
 <img src="https://media.giphy.com/media/PrIhHVAtyVnmo/giphy.gif" alt="Ring chart color animation" width="154" />
 
 ```swift
-case .:
 let ring = SKRingNode(diameter: diameter)
 ring.position = position
 addChild(ring)
@@ -150,7 +149,6 @@ ring.run(SKAction.repeatForever(sequence))
 <img src="http://i.imgur.com/VWWjIBo.png" alt="Nested ring chart" width="154" />
 
 ```swift
-case .nested:
 let nested = SKNestedRingNode(diameter: diameter, count: 3) // usually 2...5
 nested.position = position
 addChild(nested)
