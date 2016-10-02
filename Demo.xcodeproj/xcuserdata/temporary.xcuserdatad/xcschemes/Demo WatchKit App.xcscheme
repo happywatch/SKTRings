@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-               BuildableName = "SKTRingNodeDemo WatchKit App.app"
-               BlueprintName = "SKTRingNodeDemo WatchKit App"
-               ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+               BuildableName = "Demo WatchKit App.app"
+               BlueprintName = "Demo WatchKit App"
+               ReferencedContainer = "container:Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "763617D81D9B1E4D009C3913"
-               BuildableName = "SKTRingNodeDemo.app"
-               BlueprintName = "SKTRingNodeDemo"
-               ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+               BuildableName = "Demo.app"
+               BlueprintName = "Demo"
+               ReferencedContainer = "container:Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-            BuildableName = "SKTRingNodeDemo WatchKit App.app"
-            BlueprintName = "SKTRingNodeDemo WatchKit App"
-            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            BuildableName = "Demo WatchKit App.app"
+            BlueprintName = "Demo WatchKit App"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,22 +68,22 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
-         RemotePath = "/SKTRingNodeDemo">
+         RemotePath = "/Demo">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-            BuildableName = "SKTRingNodeDemo WatchKit App.app"
-            BlueprintName = "SKTRingNodeDemo WatchKit App"
-            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            BuildableName = "Demo WatchKit App.app"
+            BlueprintName = "Demo WatchKit App"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-            BuildableName = "SKTRingNodeDemo WatchKit App.app"
-            BlueprintName = "SKTRingNodeDemo WatchKit App"
-            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            BuildableName = "Demo WatchKit App.app"
+            BlueprintName = "Demo WatchKit App"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -98,22 +98,22 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
-         RemotePath = "/SKTRingNodeDemo">
+         RemotePath = "/Demo">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-            BuildableName = "SKTRingNodeDemo WatchKit App.app"
-            BlueprintName = "SKTRingNodeDemo WatchKit App"
-            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            BuildableName = "Demo WatchKit App.app"
+            BlueprintName = "Demo WatchKit App"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7636181F1D9B1FAF009C3913"
-            BuildableName = "SKTRingNodeDemo WatchKit App.app"
-            BlueprintName = "SKTRingNodeDemo WatchKit App"
-            ReferencedContainer = "container:SKTRingNodeDemo.xcodeproj">
+            BuildableName = "Demo WatchKit App.app"
+            BlueprintName = "Demo WatchKit App"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

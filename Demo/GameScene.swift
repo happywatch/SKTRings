@@ -31,7 +31,7 @@ class GameScene: SKScene {
   func showAll() {
     var i = 0
     while let ringType = RingType(rawValue: i) {
-      show(ring: ringType)
+      show(ringType: ringType)
       i += 1
     }
     
@@ -42,7 +42,7 @@ class GameScene: SKScene {
     case .standard:
       addStandardRing()
     default:
-      <#code#>
+      break
     }
   }
 }
@@ -52,42 +52,15 @@ class GameScene: SKScene {
 // MARK - Ring creation methods
 
 extension GameScene {
-  
-  enum RingType: Int {
-    case standard, adjustedValue, adjustedThickness, adjustedColor, withValueEasing, withColorEasing, withValueAndColorEasing, nested
-    
-    func simpleDescription() -> String {
-      switch self {
-      case .standard:
-        return "Standard"
-      case .adjustedValue:
-        return "Adjusted value"
-      case .adjustedThickness:
-        return "Adjusted thickness"
-      case .adjustedColor:
-        return "Adjusted color"
-      case .withValueEasing:
-        return "w/ value easing"
-      case .withColorEasing:
-        return "w/ color easing"
-      case .withValueAndColorEasing:
-        return "w/ value & color easing"
-      case .nested:
-        return "Nested"
-      }
-    }
-  }
-  
-  
   func addStandardRing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 1, row: 1)
     addLabel(for: ring, text: "Standard")
     addChild(ring)
   }
   
   func addAdjustedValueRing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 2, row: 1)
     addLabel(for: ring, text: "Adjusted value")
     addChild(ring)
@@ -95,14 +68,14 @@ extension GameScene {
   }
   
   func addAdjustedThicknessRing() {
-    let ring = SKRingNode(diameter: ringDiameter, thickness: 0.4) // decimal percentage of radius, 0...1
+    let ring = SKRingNode(diameter: diameter, thickness: 0.4) // decimal percentage of radius, 0...1
     ring.position = center(forColumn: 3, row: 1)
     addLabel(for: ring, text: "Adjusted thickness")
     addChild(ring)
   }
   
   func addAdjustedColorRing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 4, row: 1)
     addLabel(for: ring, text: "Adjusted color")
     addChild(ring)
@@ -110,7 +83,7 @@ extension GameScene {
   }
   
   func addRingWithValueEasing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 1, row: 2)
     addLabel(for: ring, text: "Value w/ easing")
     addChild(ring)
@@ -128,7 +101,7 @@ extension GameScene {
   }
   
   func addRingWithColorEasing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 2, row: 2)
     addLabel(for: ring, text: "Color w/ easing")
     addChild(ring)
@@ -147,7 +120,7 @@ extension GameScene {
   }
   
   func addRingWithValueAndColorEasing() {
-    let ring = SKRingNode(diameter: ringDiameter)
+    let ring = SKRingNode(diameter: diameter)
     ring.position = center(forColumn: 3, row: 2)
     addLabel(for: ring, text: "Color & value w/ easing")
     addChild(ring)
@@ -176,7 +149,7 @@ extension GameScene {
   }
   
   func addNestedRings() {
-    let nested = SKNestedRingNode(diameter: ringDiameter, count: 3)
+    let nested = SKNestedRingNode(diameter: diameter, count: 3)
     nested.position = center(forColumn: 4, row: 2)
     addLabel(for: nested, text: "Nested")
     addChild(nested)
@@ -204,10 +177,10 @@ extension GameScene {
   func addLabel(for node: SKNode, text: String) {
     let label = SKLabelNode()
     label.verticalAlignmentMode = .center
-    label.fontSize = ringDiameter / 11
+    label.fontSize = diameter / 11
     label.fontName = "SanFranciscoRounded-Medium"
     label.text = text
-    label.position = CGPoint(x: node.position.x, y: node.position.y - ringDiameter / 2 - label.fontSize / 3 * 2)
+    label.position = CGPoint(x: node.position.x, y: node.position.y - diameter / 2 - label.fontSize / 3 * 2)
     addChild(label)
   }
 }

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SKTRingNodeDemo WatchKit App.xcscheme</key>
+		<key>Demo WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>SKTRingNodeDemo.xcscheme</key>
+		<key>Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
