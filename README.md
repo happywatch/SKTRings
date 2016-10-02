@@ -23,7 +23,7 @@ The included Demo project shows the different adjustments and animations that yo
 
 ### Adding a ring
 
-![Ring chart](http://i.imgur.com/WVf5rCa.png)
+<img src="http://i.imgur.com/WVf5rCa.png" alt="Ring chart" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -33,7 +33,7 @@ addChild(ring)
 
 ### Adjusting value
 
-![Value ring chart](http://i.imgur.com/JXPjt5b.png)
+<img src="http://i.imgur.com/JXPjt5b.png" alt="Value ring chart" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -44,7 +44,7 @@ ring.arcEnd = 0.67 // decimal percentage of circumference, usually 0...1
 
 ### Adjusting thickness
 
-![Thick ring chart](http://i.imgur.com/Ebk7LF1.png)
+<img src="http://i.imgur.com/Ebk7LF1.png" alt="Thick ring chart" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter, thickness: 0.4) // decimal percentage of radius, 0...1
@@ -52,9 +52,11 @@ ring.position = position
 addChild(ring)
 ```
 
+`thickness` is the width of each ring. Use a decimal percentage of the radius: 0...1. Default value is 0.2.
+
 ### Adjusting color
 
-![Color ring chart](http://i.imgur.com/VMmthqJ.png)
+<img src="http://i.imgur.com/VMmthqJ.png" alt="Color ring chart" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -65,7 +67,7 @@ ring.color = UIColor.red
 
 ### Animating with value easing
 
-![Ring chart value animation](https://cloud.githubusercontent.com/assets/5604/19023224/feb4e06c-889d-11e6-81b9-d9bffbb053d7.gif)
+<img src="https://cloud.githubusercontent.com/assets/5604/19023224/feb4e06c-889d-11e6-81b9-d9bffbb053d7.gif" alt="Ring chart value animation" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -140,7 +142,7 @@ ring.run(SKAction.repeatForever(sequence))
 
 ### Adding a nested ring
 
-![nested ring chart](http://i.imgur.com/VWWjIBo.png)
+<img src="http://i.imgur.com/VWWjIBo.png" alt="Nested ring chart" width="154" />
 
 ```swift
 case .nested:
@@ -156,7 +158,7 @@ nested.rings[2].color = red
 
 ### Adjusting spacing in a nested ring
 
-![Spacing nested ring](http://i.imgur.com/9nL0e9a.png)
+<img src="http://i.imgur.com/9nL0e9a.png" alt="Spaced nested ring" width="154" />
 
 ```swift
 let nested = SKNestedRingNode(diameter: diameter, count: 3, spacing: 0.5)
@@ -168,7 +170,7 @@ addChild(nested)
 
 ### Adjusting thickness in a nested ring
 
-![Thickness nested ring](http://i.imgur.com/tXvb1rh.png)
+<img src="http://i.imgur.com/tXvb1rh.png" alt="Thick nested ring" width="154" />
 
 ```swift
 let nested = SKNestedRingNode(diameter: diameter, count: 3, thickness: 0.3)
