@@ -1,7 +1,7 @@
 # SKTRings
 Animated ring charts made with SpriteKit for watchOS 3. Supports bounce easing and color change effects.
 
-![ios-watchos-spritekit-animated-rings](https://cloud.githubusercontent.com/assets/5604/19023432/535da7fc-88a3-11e6-9209-c65f63790973.gif)
+![iOS, watchOS animated rings with SpriteKit](https://media.giphy.com/media/32oaBkqWFqfAc/giphy.gif)
 
 _Click the image to preview the animation._
 
@@ -21,7 +21,7 @@ Use `SKTRingColorEffect` to animate the color of the ring with optional easing. 
 
 ## Demo App
 
-The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS  and watchOS. Build and run the Demo scheme to see a smattering of altered rings all at once on an iOS device. Build and run the Demo WathcKit App scheme to preview one altered ring at a time on an Apple Watch. Swipe between the pages to see different alterations.
+The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS  and watchOS. Build and run the **Demo** scheme to see a smattering of altered rings all at once on an iOS device. Build and run the **Demo WathcKit App** scheme to preview one altered ring at a time on an Apple Watch. Swipe between the pages to see different alterations.
 
 ## Swift 3 Usage
 
@@ -71,9 +71,7 @@ ring.color = UIColor.red
 
 ### Animating with value easing
 
-<img src="https://cloud.githubusercontent.com/assets/5604/19023224/feb4e06c-889d-11e6-81b9-d9bffbb053d7.gif" alt="Ring chart value animation" width="154" />
-
-_Click the image to preview the animation._
+<img src="https://media.giphy.com/media/JwLG5cTUbOKXu/giphy.gif" alt="Ring chart value animation" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -94,9 +92,7 @@ ring.run(SKAction.repeatForever(sequence))
 
 ### Animating with color easing
 
-<img src="https://cloud.githubusercontent.com/assets/5604/19023609/3bdc4332-88a7-11e6-9d43-d1a8303bdd94.gif" alt="Ring chart color animation" width="154" />
-
-_Click the image to preview the animation._
+<img src="https://media.giphy.com/media/PrIhHVAtyVnmo/giphy.gif" alt="Ring chart color animation" width="154" />
 
 ```swift
 case .:
@@ -119,10 +115,8 @@ ring.run(SKAction.repeatForever(sequence6))
 ```
 
 ### Animating with value easing and color easing
-
-<img src="https://cloud.githubusercontent.com/assets/5604/19023604/2d545c96-88a7-11e6-9d51-41eb88ee62dc.gif" alt="Ring chart value and color animation" width="154" />
-
-_Click the image to preview the animation._
+    
+<img src="https://media.giphy.com/media/ExyowJGeLK6xG/giphy.gif" alt="Ring chart value and color animation" width="154" />
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
