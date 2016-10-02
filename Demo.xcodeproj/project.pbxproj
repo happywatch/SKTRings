@@ -154,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				763617DB1D9B1E4D009C3913 /* Demo */,
-				7636180A1D9B1EF8009C3913 /* Shared */,
 				763618211D9B1FAF009C3913 /* Demo WatchKit App */,
 				763618301D9B1FAF009C3913 /* Demo WatchKit Extension */,
+				7636180A1D9B1EF8009C3913 /* Shared */,
 				763617DA1D9B1E4D009C3913 /* Products */,
 			);
 			sourceTree = "<group>";
