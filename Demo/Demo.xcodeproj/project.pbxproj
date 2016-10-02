@@ -230,7 +230,8 @@
 				76D19A951D9F039700A69030 /* SKColor.swift */,
 				76D19A961D9F039700A69030 /* SKRingNode.swift */,
 			);
-			path = SKTRings;
+			name = SKTRings;
+			path = ../SKTRings;
 			sourceTree = SOURCE_ROOT;
 		};
 		76D19A9D1D9F03A500A69030 /* SKTUtils */ = {
@@ -249,7 +250,8 @@
 				76D19AA81D9F03A500A69030 /* SKTTimingFunctions.swift */,
 				76D19AA91D9F03A500A69030 /* Vector3.swift */,
 			);
-			path = SKTUtils;
+			name = SKTUtils;
+			path = ../SKTUtils;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
