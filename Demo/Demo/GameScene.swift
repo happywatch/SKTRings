@@ -88,11 +88,11 @@ class GameScene: SKScene {
       let colorDownEffect = SKTRingColorEffect(for: ring, to: red, duration: duration)
       colorDownEffect.timingFunction = SKTTimingFunctionBounceEaseOut
       let colorDownAction = SKAction.actionWithEffect(colorDownEffect)
-      let sequence6 = SKAction.sequence([colorUpAction,
+      let sequence = SKAction.sequence([colorUpAction,
                                          SKAction.wait(forDuration: duration / 3),
                                          colorDownAction,
                                          SKAction.wait(forDuration: duration / 3)])
-      ring.run(SKAction.repeatForever(sequence6))
+      ring.run(SKAction.repeatForever(sequence))
       
     case .withValueAndColorEasing:
       let ring = SKRingNode(diameter: diameter)
@@ -126,6 +126,7 @@ class GameScene: SKScene {
       let nested = SKNestedRingNode(diameter: diameter, count: 3)
       nested.position = position
       addChild(nested)
+      // Adjusting color and value. Rings are 0 indexed from innermost to outermost.
       nested.rings[0].arcEnd = 0.33
       nested.rings[1].arcEnd = 0.5
       nested.rings[1].color = blue
