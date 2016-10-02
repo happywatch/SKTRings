@@ -11,7 +11,7 @@ This library was originally written for Chapter 18, "Interactive Animation," in 
 
 ## API Overview
 
-`SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You can control the `thickness` and the `color` of a ring. 
+`SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You can control the `thickness`, `arcEnd` (a.k.a. value), and the `color` of a ring. 
 
 `SKNestedRingNode` simplifies creating multiple concentric rings. You can control the `spacing` between rings. 
 
