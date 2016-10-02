@@ -15,7 +15,7 @@
 		763618241D9B1FAF009C3913 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763618221D9B1FAF009C3913 /* Interface.storyboard */; };
 		763618261D9B1FAF009C3913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763618251D9B1FAF009C3913 /* Assets.xcassets */; };
 		7636182D1D9B1FAF009C3913 /* Demo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7636182C1D9B1FAF009C3913 /* Demo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		763618321D9B1FAF009C3913 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618311D9B1FAF009C3913 /* InterfaceController.swift */; };
+		763618321D9B1FAF009C3913 /* PageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618311D9B1FAF009C3913 /* PageInterfaceController.swift */; };
 		763618341D9B1FAF009C3913 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */; };
 		763618361D9B1FAF009C3913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763618351D9B1FAF009C3913 /* Assets.xcassets */; };
 		7636183A1D9B1FAF009C3913 /* Demo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 763618201D9B1FAF009C3913 /* Demo WatchKit App.app */; };
@@ -52,6 +52,8 @@
 		76D19ABF1D9F03A500A69030 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D19AA81D9F03A500A69030 /* SKTTimingFunctions.swift */; };
 		76D19AC01D9F03A500A69030 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D19AA91D9F03A500A69030 /* Vector3.swift */; };
 		76D19AC11D9F03A500A69030 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D19AA91D9F03A500A69030 /* Vector3.swift */; };
+		76ED9EDE1DA179A700B31B6C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED9EDD1DA179A700B31B6C /* InterfaceController.swift */; };
+		76ED9EE01DA17F5B00B31B6C /* iosGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED9EDF1DA17F5B00B31B6C /* iosGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +111,7 @@
 		763618251D9B1FAF009C3913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		763618271D9B1FAF009C3913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7636182C1D9B1FAF009C3913 /* Demo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Demo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		763618311D9B1FAF009C3913 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		763618311D9B1FAF009C3913 /* PageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInterfaceController.swift; sourceTree = "<group>"; };
 		763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		763618351D9B1FAF009C3913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		763618371D9B1FAF009C3913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,8 @@
 		76D19AA71D9F03A500A69030 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		76D19AA81D9F03A500A69030 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		76D19AA91D9F03A500A69030 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		76ED9EDD1DA179A700B31B6C /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		76ED9EDF1DA17F5B00B31B6C /* iosGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iosGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 			children = (
 				763617DC1D9B1E4D009C3913 /* AppDelegate.swift */,
 				763617E41D9B1E4D009C3913 /* GameViewController.swift */,
+				76ED9EDF1DA17F5B00B31B6C /* iosGameScene.swift */,
 				763617E61D9B1E4D009C3913 /* Main.storyboard */,
 				763617E91D9B1E4D009C3913 /* Assets.xcassets */,
 				763617EB1D9B1E4D009C3913 /* LaunchScreen.storyboard */,
@@ -209,7 +214,8 @@
 		763618301D9B1FAF009C3913 /* Demo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				763618311D9B1FAF009C3913 /* InterfaceController.swift */,
+				76ED9EDD1DA179A700B31B6C /* InterfaceController.swift */,
+				763618311D9B1FAF009C3913 /* PageInterfaceController.swift */,
 				763618331D9B1FAF009C3913 /* ExtensionDelegate.swift */,
 				763618351D9B1FAF009C3913 /* Assets.xcassets */,
 				763618371D9B1FAF009C3913 /* Info.plist */,
@@ -385,6 +391,7 @@
 				763C23231DA0861A0037A432 /* GameScene.swift in Sources */,
 				76D19ABE1D9F03A500A69030 /* SKTTimingFunctions.swift in Sources */,
 				76D19A9B1D9F039700A69030 /* SKRingNode.swift in Sources */,
+				76ED9EE01DA17F5B00B31B6C /* iosGameScene.swift in Sources */,
 				76D19AAE1D9F03A500A69030 /* CGVector+Extensions.swift in Sources */,
 				76D19AAC1D9F03A500A69030 /* CGPoint+Extensions.swift in Sources */,
 				76D19AAA1D9F03A500A69030 /* CGFloat+Extensions.swift in Sources */,
@@ -407,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76ED9EDE1DA179A700B31B6C /* InterfaceController.swift in Sources */,
 				76D19AAD1D9F03A500A69030 /* CGPoint+Extensions.swift in Sources */,
 				769291681DA07F4D00C0A8A2 /* RingType.swift in Sources */,
 				76D19ABD1D9F03A500A69030 /* SKTEffects.swift in Sources */,
@@ -424,7 +432,7 @@
 				76D19AAF1D9F03A500A69030 /* CGVector+Extensions.swift in Sources */,
 				763618341D9B1FAF009C3913 /* ExtensionDelegate.swift in Sources */,
 				76D19AAB1D9F03A500A69030 /* CGFloat+Extensions.swift in Sources */,
-				763618321D9B1FAF009C3913 /* InterfaceController.swift in Sources */,
+				763618321D9B1FAF009C3913 /* PageInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

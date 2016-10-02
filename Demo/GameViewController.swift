@@ -8,7 +8,6 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
 
 class GameViewController: UIViewController {
   
@@ -19,15 +18,11 @@ class GameViewController: UIViewController {
       return
     }
     
-    let scene = GameScene(size: view.frame.size)
-    
-    // Present the scene
+    let scene = iosGameScene(size: view.frame.size)
     view.presentScene(scene)
-    
     view.ignoresSiblingOrder = true
     
-//    view.showsFPS = true
-//    view.showsNodeCount = true
+    scene.showAll()
   }
   
   override var prefersStatusBarHidden: Bool {

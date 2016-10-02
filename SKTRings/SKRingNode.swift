@@ -92,6 +92,12 @@ extension SKRingNode {
 }
 
 class SKNestedRingNode: SKNode {
+  var rings: [SKRingNode] {
+    return children.map {
+      $0 as! SKRingNode
+    }
+  }
+  
   // `thickness` is the width of each ring. Use a decimal percentage of the radius, 0...1
   // `spacing` is the separation between rings. Use a decimal percentage of the thickness, 0...1
   init(diameter: CGFloat, count: Int, thickness: CGFloat = 0.2, spacing: CGFloat = 0.05) {

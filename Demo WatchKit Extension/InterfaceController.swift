@@ -1,8 +1,8 @@
 //
 //  InterfaceController.swift
-//  SKTRingNodeDemo WatchKit App Extension
+//  Demo
 //
-//  Created by temporary on 9/27/16.
+//  Created by temporary on 10/2/16.
 //  Copyright © 2016 benmorrow. All rights reserved.
 //
 
@@ -11,12 +11,19 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-  @IBOutlet var skInterface: WKInterfaceSKScene!
   
-  override func awake(withContext context: Any?) {
-    super.awake(withContext: context)
-    
-    let scene = GameScene(size: contentFrame.size)
-    skInterface.presentScene(scene)
+  override init() {
+    super.init()
+        
+    var ringTypes = [RingType]()
+    // Iterate through all values for RingType
+    var i = 0
+    while let ringType = RingType(rawValue: i) {
+      ringTypes.append(ringType)
+      i += 1
+    }
+
+    let names = [String](repeating: "PageInterfaceControllerType", count: ringTypes.count)
+    WKInterfaceController.reloadRootControllers(withNames: names, contexts: ringTypes)
   }
 }

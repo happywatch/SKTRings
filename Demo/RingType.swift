@@ -11,7 +11,7 @@ import Foundation
 enum RingType: Int {
   case standard, adjustedValue, adjustedThickness, adjustedColor, withValueEasing, withColorEasing, withValueAndColorEasing, nested
   
-  func simpleDescription() -> String {
+  var simpleDescription: String {
     switch self {
     case .standard:
       return "Standard"
