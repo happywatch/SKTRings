@@ -1,25 +1,29 @@
 # SKTRings
-Animated ring charts in SpriteKit for watchOS 3. Supports bounce easing and color change effects.
+Animated ring charts made with SpriteKit for watchOS 3. Supports bounce easing and color change effects.
 
+![ios-watchos-spritekit-animated-rings](https://cloud.githubusercontent.com/assets/5604/19023432/535da7fc-88a3-11e6-9209-c65f63790973.gif)
 
+_Click the image to preview the animation._
 
 The Activity app is one of the prominent features of the Apple Watch. Imagine if the Activity app’s rings could animate to their current value with a bounce effect or change color depending on how recently you moved. Those animations would be both magical and useful. However, you’d have a hard time implementing them with a sequence of images like you used in watchOS 2. Instead, now you can use SpriteKit to achieve those animations.
 
 ## API
 
-`SKRingNode` performs the bulk of the calculations and drawing of the ring so that you can focus on the animations you’ll add to it. You control the `thickness` and the `color`. 
+`SKRingNode` performs the bulk of the calculations and drawing of a ring chart so that you can focus on the adjustments and animations. You control the `thickness` and the `color` of a ring. 
 
 `SKNestedRingNode` simplifies creating multiple concentric rings. You control the `spacing` between rings. 
 
-`SKTRingColorEffect` allows you to animate the color of the ring with optional easing. Similarly, `SKTRingValueEffect` allows you to animate the the filled-in value with optional easing.
+Use `SKTRingColorEffect` to animate the color of the ring with optional easing. Similarly, use `SKTRingValueEffect` to animate the the filled-in value with optional easing.
 
-> **Note**: SKTRings relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.
+> **Note**: This API relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.
 >
->There’s only one file inside SKTUtils that’s not shared with the WatchKit Extension in the Demo app. SKTAudio.swift refers to `AVFoundation` which is not available in watchOS.
+>There’s only one file inside SKTUtils that you can't share with the WatchKit Extension: SKTAudio.swift. That file refers to `AVFoundation` which is not available in watchOS.
 
-The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS and watchOS.
+## Demo App
 
-## Usage
+The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS  and watchOS. Build and run the Demo scheme to see a smattering of altered rings all at once on an iOS device. Build and run the Demo WathcKit App scheme to preview one altered ring at a time on an Apple Watch. Swipe between the pages to see different alterations.
+
+## Swift 3 Usage
 
 ### Adding a ring
 
@@ -69,6 +73,8 @@ ring.color = UIColor.red
 
 <img src="https://cloud.githubusercontent.com/assets/5604/19023224/feb4e06c-889d-11e6-81b9-d9bffbb053d7.gif" alt="Ring chart value animation" width="154" />
 
+_Click the image to preview the animation._
+
 ```swift
 let ring = SKRingNode(diameter: diameter)
 ring.position = position
@@ -87,6 +93,10 @@ ring.run(SKAction.repeatForever(sequence))
 ```
 
 ### Animating with color easing
+
+<img src="https://cloud.githubusercontent.com/assets/5604/19023609/3bdc4332-88a7-11e6-9d43-d1a8303bdd94.gif" alt="Ring chart color animation" width="154" />
+
+_Click the image to preview the animation._
 
 ```swift
 case .:
@@ -108,8 +118,11 @@ let sequence6 = SKAction.sequence([colorUpAction,
 ring.run(SKAction.repeatForever(sequence6))
 ```
 
-
 ### Animating with value easing and color easing
+
+<img src="https://cloud.githubusercontent.com/assets/5604/19023604/2d545c96-88a7-11e6-9d51-41eb88ee62dc.gif" alt="Ring chart value and color animation" width="154" />
+
+_Click the image to preview the animation._
 
 ```swift
 let ring = SKRingNode(diameter: diameter)
@@ -146,7 +159,7 @@ ring.run(SKAction.repeatForever(sequence))
 
 ```swift
 case .nested:
-let nested = SKNestedRingNode(diameter: diameter, count: 3)
+let nested = SKNestedRingNode(diameter: diameter, count: 3) // usually 2...5
 nested.position = position
 addChild(nested)
 nested.rings[0].arcEnd = 0.33
@@ -161,7 +174,7 @@ nested.rings[2].color = red
 <img src="http://i.imgur.com/9nL0e9a.png" alt="Spaced nested ring" width="154" />
 
 ```swift
-let nested = SKNestedRingNode(diameter: diameter, count: 3, spacing: 0.5)
+let nested = SKNestedRingNode(diameter: diameter, count: 3, spacing: 0.5) // decimal percentage of thickness, 0...1
 nested.position = position
 addChild(nested)
 ```
@@ -173,7 +186,7 @@ addChild(nested)
 <img src="http://i.imgur.com/tXvb1rh.png" alt="Thick nested ring" width="154" />
 
 ```swift
-let nested = SKNestedRingNode(diameter: diameter, count: 3, thickness: 0.3)
+let nested = SKNestedRingNode(diameter: diameter, count: 3, thickness: 0.3) // decimal percentage of radius, 0...1
 nested.position = position
 addChild(nested)
 ```
