@@ -35,6 +35,8 @@ ring.position = position
 addChild(ring)
 ```
 
+The only required parameter to initialize an `SKRingNode` is `diameter`. This defines a square frame with edge length of the `diameter` and draws the ring inside. The default color is white.
+
 ### Adjusting value
 
 <img src="http://i.imgur.com/JXPjt5b.png" alt="Value ring chart" width="154" />
@@ -46,6 +48,8 @@ addChild(ring)
 ring.arcEnd = 0.67 // decimal percentage of circumference, usually 0...1
 ```
 
+You use the `arcEnd` property to fill the value of the ring. Use a decimal percentage of the circumference from `0.0` to `1.0`. Values greater than `1.0` will loop over the top of the ring. The default value is `0.0`.
+
 ### Adjusting thickness
 
 <img src="http://i.imgur.com/Ebk7LF1.png" alt="Thick ring chart" width="154" />
@@ -56,7 +60,7 @@ ring.position = position
 addChild(ring)
 ```
 
-`thickness` is the width of each ring. Use a decimal percentage of the radius: 0...1. Default value is 0.2.
+`thickness` is the width of each ring. Use a decimal percentage of the radius from `0.0` to `1.0`. The default value is `0.2`.
 
 ### Adjusting color
 
@@ -68,6 +72,8 @@ ring.position = position
 addChild(ring)
 ring.color = UIColor.red
 ```
+
+You may assign any valid `UIColor` to `color`. The background, unfilled portion of the ring uses the same color with 20% opacity.
 
 ### Animating with value easing
 
@@ -89,6 +95,14 @@ let sequence = SKAction.sequence([valueUpAction,
                                   SKAction.wait(forDuration: duration / 3)])
 ring.run(SKAction.repeatForever(sequence))
 ```
+
+Animating a ring with SKTRings is very similar to any other animation in SpriteKit, especailly one that uses SKTUtils. Here's what's happening in this code:
+
+1. Preapre a `SKTRingValueEffect` with a bounce-out ease. 
+2. Package up that effect into an `SKAction` to run later.
+3. Currently SKTEffects do not support the `reversed()` so you prepare another `SKTRingValueEffect` to go the opposite direction.
+4. Place the animations into a sequence.
+5. Run the animation sequence.
 
 ### Animating with color easing
 
@@ -154,13 +168,15 @@ ring.run(SKAction.repeatForever(sequence))
 let nested = SKNestedRingNode(diameter: diameter, count: 3) // usually 2...5
 nested.position = position
 addChild(nested)
-// Adjusting color and value. Rings are 0 indexed from innermost to outermost.
+// adjusting color and value
 nested.rings[0].arcEnd = 0.33
 nested.rings[1].arcEnd = 0.5
 nested.rings[1].color = blue
 nested.rings[2].arcEnd = 0.67
 nested.rings[2].color = red
 ```
+
+Use `rings` to access the individual nested rings. Rings are 0 indexed from innermost to outermost.
 
 ### Adjusting spacing in a nested ring
 
@@ -172,7 +188,7 @@ nested.position = position
 addChild(nested)
 ```
 
-`spacing` is the separation between rings. Use a decimal percentage of the thickness: 0...1. Default value is 0.05.
+`spacing` is the separation between rings. Use a decimal percentage of the thickness from `0.0` to `1.0`. The default value is `0.05`.
 
 ### Adjusting thickness in a nested ring
 
@@ -184,7 +200,7 @@ nested.position = position
 addChild(nested)
 ```
 
-`thickness` is the width of each ring. Use a decimal percentage of the radius: 0...1. Default value is 0.2.
+`thickness` is the width of each ring. Use a decimal percentage of the radius from `0.0` to `1.0`. The default value is `0.2`.
 
 > **Footnotes**
 >
