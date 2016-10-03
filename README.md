@@ -17,13 +17,11 @@ This library was originally written for Chapter 18, "Interactive Animations," in
 
 `SKTRingValueEffect` animates the value of the ring with optional easing. Similarly, `SKTRingColorEffect` animates the color with optional easing.
 
-> **Note**: This API relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.
->
->There’s only one file inside SKTUtils that you can't share with the WatchKit Extension: SKTAudio.swift. That file refers to `AVFoundation` which is not available in watchOS.
+> **Note**: This API relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.<sup id="a1">[1](#f1)</sup>
 
 ## Demo App
 
-The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS  and watchOS. Build and run the **Demo** scheme to see a smattering of altered rings all at once on an iOS device. Build and run the **Demo WathcKit App** scheme to preview one altered ring at a time on an Apple Watch. Swipe between the pages to see different alterations.
+The included Demo project shows the different adjustments and animations that you can add to your ring charts for both iOS  and watchOS. Build and run the **Demo** scheme to see the full collection of altered rings on an iOS device. Build and run the **Demo WathcKit App** scheme to preview one altered ring at a time on an Apple Watch. Swipe between the pages to see different alterations.
 
 ## Swift 3 Usage
 
@@ -187,3 +185,7 @@ addChild(nested)
 ```
 
 `thickness` is the width of each ring. Use a decimal percentage of the radius: 0...1. Default value is 0.2.
+
+> **Footnotes**
+>
+> <sup id="f1">1</sup> There’s only one file inside SKTUtils that is _not_ shared with the WatchKit Extension: SKTAudio.swift. It refers to `AVFoundation` which is not available in watchOS. There are alternative ways to play sounds in a Watch app so you won't miss it. [↩](#a1)
