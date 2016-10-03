@@ -17,7 +17,7 @@ This library was originally written for Chapter 18, "Interactive Animations," in
 
 `SKTRingValueEffect` animates the value of the ring with optional easing. Similarly, `SKTRingColorEffect` animates the color with optional easing.
 
-> **Note**: This API relies on [SKTUtils](http://bit.ly/2dcyDyz) for animation effects. SKUtils is an open source project published by the raywenderlich.com team.<sup id="a1">[1](#f1)</sup>
+> **Note**: This API relies on the open source [SKTUtils](http://bit.ly/2dcyDyz) for animation effects.<sup id="a1">[1](#f1)</sup>
 
 ## Demo App
 
