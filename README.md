@@ -7,7 +7,7 @@ The Activity app is one of the prominent features of the Apple Watch. Imagine if
 
 <a href="http://bit.ly/w3Tbook"><img src="http://i.imgur.com/o0CCkKa.png" alt="watchOS by Tutorials book cover" width="320" /></a>
 
-This library was originally written for Chapter 18, "Interactive Animations," in the book, [watchOS by Tutorials](http://bit.ly/w3Tbook).
+This library was originally written for Chapter 18, "Interactive Animations," in the book, [watchOS by Tutorials](http://bit.ly/watchostutorials).
 
 ## API Overview
 
