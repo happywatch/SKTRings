@@ -105,7 +105,7 @@ public func + (left: CGPoint, right: CGPoint) -> CGPoint {
 /**
  * Increments a CGPoint with the value of another.
  */
-public func += (left: inout CGPoint , right: CGPoint) {
+public func += (left: inout CGPoint, right: CGPoint) {
   left = left + right
 }
 

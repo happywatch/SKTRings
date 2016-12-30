@@ -28,10 +28,10 @@ import SpriteKit
  * Unfortunately, SKAction does not have a concept of a timing function, so
  * we need to replicate the actions using SKTEffect subclasses.
  */
-open class SKTEffect {
+public class SKTEffect {
   unowned var node: SKNode
   var duration: TimeInterval
-  open var timingFunction: ((CGFloat) -> CGFloat)?
+  public var timingFunction: ((CGFloat) -> CGFloat)?
 
   public init(node: SKNode, duration: TimeInterval) {
     self.node = node
@@ -39,7 +39,7 @@ open class SKTEffect {
     timingFunction = SKTTimingFunctionLinear
   }
 
-  open func update(_ t: CGFloat) {
+  public func update(_ t: CGFloat) {
     // subclasses implement this
   }
 }
@@ -47,7 +47,7 @@ open class SKTEffect {
 /**
  * Moves a node from its current position to a new position.
  */
-open class SKTMoveEffect: SKTEffect {
+public class SKTMoveEffect: SKTEffect {
   var startPosition: CGPoint
   var delta: CGPoint
   var previousPosition: CGPoint
@@ -59,7 +59,7 @@ open class SKTMoveEffect: SKTEffect {
     super.init(node: node, duration: duration)
   }
   
-  open override func update(_ t: CGFloat) {
+  public override func update(_ t: CGFloat) {
     // This allows multiple SKTMoveEffect objects to modify the same node
     // at the same time.
     let newPosition = startPosition + delta*t
@@ -72,7 +72,7 @@ open class SKTMoveEffect: SKTEffect {
 /**
  * Scales a node to a certain scale factor.
  */
-open class SKTScaleEffect: SKTEffect {
+public class SKTScaleEffect: SKTEffect {
   var startScale: CGPoint
   var delta: CGPoint
   var previousScale: CGPoint
@@ -84,19 +84,19 @@ open class SKTScaleEffect: SKTEffect {
     super.init(node: node, duration: duration)
   }
 
-  open override func update(_ t: CGFloat) {
+  public override func update(_ t: CGFloat) {
     let newScale = startScale + delta*t
     let diff = newScale / previousScale
     previousScale = newScale
     node.xScale *= diff.x
-    node.yScale *= diff.y    
+    node.yScale *= diff.y
   }
 }
 
 /**
  * Rotates a node to a certain angle.
  */
-open class SKTRotateEffect: SKTEffect {
+public class SKTRotateEffect: SKTEffect {
   var startAngle: CGFloat
   var delta: CGFloat
   var previousAngle: CGFloat
@@ -108,7 +108,7 @@ open class SKTRotateEffect: SKTEffect {
     super.init(node: node, duration: duration)
   }
 
-  open override func update(_ t: CGFloat) {
+  public override func update(_ t: CGFloat) {
     let newAngle = startAngle + delta*t
     let diff = newAngle - previousAngle
     previousAngle = newAngle
